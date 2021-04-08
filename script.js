@@ -10,6 +10,9 @@ function startCounter() {
     if (inp.value === "") {
         return;
     }
+    if (finalScore > 9) {
+        return;
+    }
     let currentScore = 0;
     current.textContent = 0;
     let interval = setInterval(function () {
